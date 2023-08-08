@@ -1,0 +1,155 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-image: url('../../imgs/libreria.jpg');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#sct-iniciar-sesion {
+    display: flex;
+    justify-content: center;
+}
+
+#form-iniciar-sesion {
+    margin-top: 150px;
+    padding: 3px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.input-iniciar-sesion {
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+.cont-botones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-botones a {
+    text-decoration: none;
+    border: none;
+    width: 45%;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cont-botones a:hover {
+    background-color: gray;
+}
+
+#btn-recuperar {
+    border: none;
+    width: 45%;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-recuperar:hover {
+    background-color: gray;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: gray;
+}
+
+.contenedor {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 50px;
+    height: 375px;
+}
+
+.hed-inicio {
+    width: 100%;
+    height: 80px;
+    background: #4F8A8B;
+    border-bottom: #30475E solid 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.hed-inicio .cont-menu {
+    height: 100%;
+}
+
+.hed-inicio .cont-menu #nav-principal {
+    height: 100%;
+}
+
+nav ul li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav>ul>li>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+}
+
+nav>ul>li>a:hover {
+    transform: scale(1.1);
+}
+
+.a-logo img {
+    width: 130px;
+    height: 50px;
+}
+
+.a-element-nav i {
+    font-size: 30px;
+    padding-left: 100px;
+}
+
+.a-element-nav:hover {
+    transform: scale(1.1);
+}
+
+input[type="email"] {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+}

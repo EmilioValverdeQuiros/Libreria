@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesión</title>
+
+
+    <link rel="stylesheet" href="/registro/css/login.css">
+</head>
+
+<body>
+    <header class="hed-inicio">
+        <div class="cont-menu">
+            <nav id="nav-principal">
+                <ul>
+                    <li>
+                        <a href="/index.html" class="a-logo"><img src="/imgs/El bazar de las sorpresas.jpeg" alt=""></a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sct-iniciar-sesion">
+        <form id="form-iniciar-sesion">
+
+            <div class="contenedor">
+
+                <h1>Iniciar Sesión</h1>
+
+                <div class="input-iniciar-sesion">
+                    <input type="text" id="txt-identificacion" placeholder="Identificacion">
+                </div>
+
+                <div class="input-iniciar-sesion">
+                    <input type="password" id="txt-contrasenna-login" placeholder="Contraseña">
+                </div>
+
+                <div>
+                    <button type="button" id="btn-iniciar-sesion">Iniciar Sesión</button>
+                </div>
+
+                <div>
+                    <p>Al iniciar sesion, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+                    <p><a href="/registro/recuperarContranna.html" class="link">¿Olvidaste tu contraseña?</a></p>
+                    <p>¿No tienes una cuenta? <a href="registrar-usuario.html" class="link">Registrate</a></p>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/usuarios.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

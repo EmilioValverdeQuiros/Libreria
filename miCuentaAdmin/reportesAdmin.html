@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/8ce25482e7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="/miCuentaAdmin/css/reportesAdmin.css">
+
+    <title>Reportes</title>
+</head>
+
+<body>
+    <header class="hed-inicio">
+        <div class="cont-menu">
+            <nav id="nav-principal">
+                <ul>
+                    <li>
+                        <a href="/index.html" class="a-logo"><img src="/imgs/El bazar de las sorpresas.jpeg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="/busqueda.html" class="a-element-nav">Categorias</a>
+                        <ul>
+                            <li><a href="/busqueda.html">Ciencia Ficción</a></li>
+                            <li><a href="/busqueda.html">Comedia</a></li>
+                            <li><a href="/busqueda.html">Terror</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cont-buscador">
+            <input type="search" class="input-buscador" placeholder="Titulo, autor, genero...">
+            <div class="btn-lupa">
+                <a href="/busqueda.html">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="cont-inicio">
+            <a href="/registro/login.html" class="a-element-nav" id="miCuenta">Iniciar sesión</a>
+            <div class="cont-compras">
+                <a href="/carritoDeCompras/carritoCompras.html" class="a-element-nav">
+                    <i class="fa fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="cont-cuerpo-pagina">
+        <div class="cont-navegador">
+            <ul>
+                <li class="list">
+                    <a href="/miCuentaAdmin/miCuentaAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-user"></i></span>
+                        <span class="s-titulo">Información General</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/cambiarContraseñaAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-lock"></i></span>
+                        <span class="s-titulo">Cambiar Contraseña</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/libroFanAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-id-card"></i></span>
+                        <span class="s-titulo">Libro Fan</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/librosAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-book"></i></span>
+                        <span class="s-titulo">Libros</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/autoresAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-address-book"></i></span>
+                        <span class="s-titulo">Autores</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/categoriaAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-list"></i></span>
+                        <span class="s-titulo">Categorías</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/puntosRetiroAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-location-dot"></i></i></span>
+                        <span class="s-titulo">Puntos de Retiro</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/sociosAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-user-group"></i></span>
+                        <span class="s-titulo">Socios Comerciales</span>
+                    </a>
+                </li>
+                <li class="list-activo">
+                    <a href="/miCuentaAdmin/reportesAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-clipboard-list"></i></span>
+                        <span class="s-titulo">Reportes</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/usuariosAdmin.html">
+                        <span class="s-icono"><i class="fa-solid fa-users"></i></span>
+                        <span class="s-titulo">Usuarios</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/miCuentaAdmin/cupones.html">
+                        <span class="s-icono"><i class="fa-solid fa-ticket"></i></span>
+                        <span class="s-titulo">Cupones</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="/index.html">
+                        <span class="s-icono"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                        <span class="s-titulo">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-contenido">
+            <div class="cont-informacion">
+                <h1>Reportes</h1>
+
+                <div class="cont-ordenar">
+                    <div>
+                        <h2>Tipo de reporte: </h2>
+                        <h2>Del:</h2>
+                        <h2>Al:</h2>
+                    </div>
+                    <div class="cont-escoger-datos">
+                        <select id="sct-tipoReporte">
+                            <option value="1">Libros más vendidos</option>
+                            <option value="2">Lista de ventas</option>
+                            <option value="3">Socios comerciales con más retiros</option>
+                            <option value="4">Total de ventas, excluyendo descuentos</option>
+                            <option value="5">Total de descuentos aplicados por tarjeta Libro Fan</option>
+                        </select>
+                        <input type="date">
+                        <input type="date">
+                    </div>
+                </div>
+            </div>
+            <div class="cont-reporte">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Título del libro</th>
+                            <th>Número de ventas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bajo la misma estrella</td>
+                            <td>23</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="cont-footer">
+            <!--Todo class debe llevar la sección a la que peretenece-->
+            <div class="cont-row">
+                <div class="cont-columna">
+                    <a href="/quienesSomos.html">¿Quiénes somos?</a>
+                    <div class="cont-element-footer">
+                        <a href="/politicas.html">Políticas</a>
+                    </div>
+                    <div class="cont-element-footer">
+                        <a href="/socios.html">Socios comerciales</a>
+                    </div>
+                    <div class="cont-element-footer">
+                        <a href="/puntosRetiro.html">Puntos de retiro</a>
+                    </div>
+                </div>
+                <div class="cont-columna-redes">
+                    <ul class="redes">
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=es">
+                                <i class="fab fa-twitter "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/?hl=es-la">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3>
+                        Redes Sociales
+                    </h3>
+                </div>
+                <div class="cont-columna ">
+                    <ul class="contactos">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=50687031517&text=Hola,+Libreria te saluda+&app_absent=0 ">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contactenos.html">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="cont-element-footer">
+                        <a href="/contactenos.html">Contáctenos</a>
+                    </div>
+                    <div class="cont-element-footer">
+                        <a href="/ayuda.html">Ayuda</a>
+                    </div>
+                    <div class="cont-element-footer">
+                        <a href="/preguntas.html">Preguntas frecuentes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont-barra-footer ">
+            &copy; Derechos Reservados - 2022
+        </div>
+    </footer>
+
+    <script src="/js/verificarUsuarioConectado.js"></script>
+</body>
+
+</html>
